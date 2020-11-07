@@ -9,7 +9,7 @@ const ArticlePage: NextPage = () => {
   }
 
   if (loading) {
-    return <div>Loading...</div>
+    return <div>Error...</div>
   }
 
   return <div>{JSON.stringify(data)}</div>
