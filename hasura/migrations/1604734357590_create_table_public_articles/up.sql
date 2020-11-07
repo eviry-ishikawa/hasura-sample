@@ -1,0 +1,1 @@
+CREATE TABLE "public"."articles"("id" Integer NOT NULL, "content" text NOT NULL, "created_at" timestamptz NOT NULL, "updated_at" timestamptz NOT NULL DEFAULT now(), PRIMARY KEY ("id") , UNIQUE ("id"));
