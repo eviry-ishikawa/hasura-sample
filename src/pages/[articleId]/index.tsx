@@ -12,7 +12,11 @@ const ArticlePage: NextPage = () => {
     return <div>Error...</div>
   }
 
-  return <div>{JSON.stringify(data)}</div>
+  return <div>{data.articles.map((article) => {
+    <div>
+      {article.content}
+    </div>
+  })}</div>
 }
 
 export default ArticlePage
