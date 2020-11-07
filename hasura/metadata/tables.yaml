@@ -1,6 +1,0 @@
-- table:
-    schema: public
-    name: article
-- table:
-    schema: public
-    name: user
