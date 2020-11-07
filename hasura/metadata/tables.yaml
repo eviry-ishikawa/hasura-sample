@@ -1,25 +1,6 @@
 - table:
     schema: public
     name: article
-  object_relationships:
-  - name: user
-    using:
-      foreign_key_constraint_on: author_id
 - table:
     schema: public
     name: user
-  configuration:
-    custom_root_fields: {}
-    custom_column_names:
-      display_name: displayName
-      display_id: displayId
-      updated_at: updatedAt
-      created_at: createdAt
-  array_relationships:
-  - name: articles
-    using:
-      foreign_key_constraint_on:
-        column: author_id
-        table:
-          schema: public
-          name: article
