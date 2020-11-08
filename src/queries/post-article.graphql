@@ -1,0 +1,9 @@
+mutation postArticle(
+  $id: Int
+  $content: String!
+  $created_at: timestamptz
+) {
+  insert_articles_one(object: {content: $content, id:$id, created_at:$created_at}) {
+    id
+  }
+}

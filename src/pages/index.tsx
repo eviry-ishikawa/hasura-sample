@@ -1,4 +1,5 @@
 import { NextPage } from 'next'
+import { AddArticle } from '../components/AddArticle'
 import { useGetArticlesQuery } from '../generated/graphql'
 
 const Index: NextPage = () => {
@@ -23,6 +24,7 @@ const Index: NextPage = () => {
           </div>
         )
       })}
+      <AddArticle />
     </div>
   )
 }

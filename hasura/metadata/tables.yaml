@@ -1,3 +1,9 @@
 - table:
     schema: public
+    name: article
+- table:
+    schema: public
     name: articles
+- table:
+    schema: public
+    name: user
